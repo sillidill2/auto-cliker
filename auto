@@ -1,0 +1,17 @@
+import pyautogui
+import time
+
+# Number of clicks and interval between clicks
+num_clicks = 100
+interval = 0.1  # seconds
+
+print("Auto-clicker will start in 5 seconds. Move your mouse to the position where you want to click.")
+time.sleep(5)
+
+print("Starting auto-clicker...")
+
+for _ in range(num_clicks):
+    pyautogui.click()
+    time.sleep(interval)
+
+print("Auto-clicker finished.")
